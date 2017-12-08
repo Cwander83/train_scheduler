@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:500|Hind:600');
+
+
+
+body {
+    background: rgba(247, 193, 193, 0.294);
+    background-size: 100%;
+    font-family: 'Heebo', sans-serif;
+}
+
+label {
+    padding: 3px;
+}
+
+.jumbotron {
+    color: lightgray;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background: url(http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/2016/04/mr_t_reading_autobiography.jpg?itok=17gACrvx);
+    font-family: 'Hind', sans-serif;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+#panel-heading{
+    background-color: rgb(76, 76, 182);
+    color: lightgrey;
+    
+}
+

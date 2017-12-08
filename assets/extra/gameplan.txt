@@ -1,0 +1,12 @@
+list to do
+
+build game play info
+build 3 icons clickable icons for r p s
+build the box where the wins, losses, which the player choose, ties, which player won
+finish the css
+
+start on javascript
+connect to the firebase 
+build the gameplay
+reset the game for new players
+
