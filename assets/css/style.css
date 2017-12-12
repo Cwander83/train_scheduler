@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:500|Hind:600');
 body {
-    background:rgba(105, 79, 58, 0.288);
+    background: rgba(105, 79, 58, 0.288);
     font-family: 'Heebo', sans-serif;
 }
 
@@ -24,19 +24,23 @@ img {
     background-color: rgb(76, 76, 182);
     color: lightgrey;
 }
-.form-group{
+
+label{
+    color:black;
+    text-shadow: 0 2px white;
+}
+
+.form-group {
     background: url(../extra/Train.png);
     background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
-
-.btn{
-    background:rgb(132, 157, 209); 
+.btn {
+    background: rgb(132, 157, 209);
 }
-.button:active{
-    background:grey;
-    
+
+.button:active {
+    background: grey;
 }
