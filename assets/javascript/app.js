@@ -12,8 +12,6 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-
-
 $("#submit").on("click", function (event) {
     event.preventDefault();
     var name = $("#train-input").val().trim();
@@ -30,12 +28,9 @@ $("#submit").on("click", function (event) {
         destination: destination,
         firstTrainTime: firstTrainTime,
         frequency: frequency
-
     };
 
     database.ref().push(newTrain);
-
-    //$("#traintable").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + firstTrainTime + "</td><td>" + frequency + "</td></tr>")
 
     $("#train-input").val("");
     $("#destination-input").val("");
@@ -67,18 +62,15 @@ database.ref().on("child_added", function (SnapShot) {
     console.log("diff in time: " + diffTime);
 
     var tRemainder = diffTime % frequencyFire;
+    console.log("time remaining: "+tRemainder);
 
     var minToTrain = frequencyFire - tRemainder;
     console.log("minutes til train: " + minToTrain);
 
     nextTrain = moment().add(minToTrain, "minutes");
     console.log("nexttrain: " + nextTrain);
-    nextTrainformat = moment(nextTrain).format("mm");
-    console.log("nexttrainformat: "+nextTrainformat);
 
 
-
-
-    $("#traintable").append("<tr><td>" + nameFire + "</td><td>" + destFire + "</td><td>" + firstFire + "</td><td>" + frequencyFire + "</td><td>" + nextTrainformat + "</td></tr>")
+    $("#traintable").append("<tr><td>" + nameFire + "</td><td>" + destFire + "</td><td>" + frequencyFire  + "</td><td>" + moment(nextTrain, "X").format("HH:mm") + "</td><td>" + minToTrain + "</td></tr>")
 
 })
