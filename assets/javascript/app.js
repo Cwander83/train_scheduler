@@ -1,5 +1,5 @@
 //========firebase startup
-//console.log("conectedtoJS");
+
 var config = {
     apiKey: "AIzaSyDYjXKopvYZolIlNad3rX2jCBSbCYx_k8o",
     authDomain: "train-scheduler-d49cb.firebaseapp.com",
@@ -18,10 +18,7 @@ $("#submit").on("click", function (event) {
     var destination = $("#destination-input").val().trim();
     var firstTrainTime = moment($("#firsttraintime-input").val().trim(), "HH:mm").format("X");
     var frequency = $("#frequency-input").val().trim();
-    //console.log(name);
-    //console.log(destination);
-    //console.log(firstTrainTime);
-    //console.log(frequency);
+    
 
     var newTrain = {
         name: name,
