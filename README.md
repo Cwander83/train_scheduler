@@ -19,6 +19,8 @@ In this assignment, the objective was to create a train schedule application tha
 
 * Form Validation for correct time input
 
+### ScreenShot
+![Train-Scheduler](C:\Users\weaze\Desktop\Bootcamp\train_scheduler\assets\extra\screenshot.JPG)
 
 ### Link
 [Train-Schedule](https://Cwander83.github.io/train-schedule/)
